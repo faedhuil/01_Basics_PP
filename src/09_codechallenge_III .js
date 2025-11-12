@@ -10,8 +10,8 @@
 
 const prompt = require('prompt-sync')({sigint: true});
 
-var food;
-var drink;
+let food;
+let drink;
 
 console.log("Guten Tag bei MD, Ihre Bestellung bitte!")
 
