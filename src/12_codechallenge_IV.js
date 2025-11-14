@@ -41,7 +41,7 @@ function getSentence(arr,op) {
         case "E":
             return sentence + "!";
         default:
-            throw new Error("ungültiges argument");
+            throw new Error("invalid argument: " + op);
             
     }
 
