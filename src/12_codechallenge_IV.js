@@ -19,7 +19,33 @@ output(getSentence(["Ich","bin"],"E"));
 output(getSentence(["Ich","hätt","gern","die","Platt","von","dene","zwei","diwodaso","Spass","mache,","habbe","Sie","die"],"Q"));
 
 function getSentence(arr,op) {
-   // ???
+   
+    let sentence = "";
+
+    for(i=0; i < arr.length; i++){
+        
+        sentence += arr[i];
+
+        if(i < arr.length - 1){
+            sentence += " ";
+        }
+    }
+
+    switch (op) {
+        case "S":
+            return sentence + ".";
+        
+        case "Q":
+            return sentence + "?";
+
+        case "E":
+            return sentence + "!";
+        default:
+            throw new Error("ungültiges argument");
+            
+    }
+
+
 }
 
 
