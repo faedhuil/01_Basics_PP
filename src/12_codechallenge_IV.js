@@ -44,8 +44,6 @@ function getSentence(arr,op) {
             throw new Error("invalid argument: " + op);
             
     }
-
-
 }
 
 
